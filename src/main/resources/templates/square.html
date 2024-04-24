@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p><input placeholder="a" name="a"></p>
+    <p>+</p>
+    <p><input placeholder="b" name="b"></p>
+    <p><button formaction="/square">=</button></p>
+</form>
+<p> Площадь = <span th:text="${result}" /></p>
+<p> Периметр = <span th:text="${result2}" /></p>
+<p> <span th:text="${errorMsg}" /></p>
+</body>
+</html>
